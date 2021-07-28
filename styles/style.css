@@ -84,10 +84,6 @@ p {
     margin-top: 40px;
 }
 
-.journey {
-    right: -60px;
-}
-
 /* section futute */
 
 .future .container {
@@ -178,4 +174,82 @@ p {
     margin: 0;
     color: #fff;
     font-size: 14px;
+}
+
+
+/* Responsive */
+
+/* 993px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .intro-content {
+        width: 300px;
+    }
+}
+
+/* 769px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .header .container{
+        padding-top: 50px;
+    }
+
+    .wrapper {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .intro-content {
+        width: 90%;
+    }
+}
+
+/* 577px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .header .container {
+        padding-top: 20px;
+    }
+
+    .journey, .header .btn, .form .btn, .input {
+        width: 100%;
+    }
+
+    .future .container {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+/* < 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
 }
