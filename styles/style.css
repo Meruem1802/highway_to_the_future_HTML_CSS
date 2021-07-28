@@ -47,22 +47,22 @@ p {
 /* header */
 .header{
     background: linear-gradient(135deg, rgba(78,191,254,1) 35%, rgba(55,143,217,1) 100%);
-    padding-bottom: 70px;
 }
 
-.logo {
-    margin-top: 62px;
+.header .container {
+    padding-top: 62px;
+    padding-bottom: 70px;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items:center;
     margin-right: -60px;
     color: #fff;
 }
 
 .title {
-    margin-top: 145px;
     font-size: 37px;
     line-height: 1.36em;
 }
@@ -91,17 +91,15 @@ p {
 /* section futute */
 
 .future .container {
-    text-align: center;
-}
-
-.future .section-title {
-    margin-top: 105px;
-    margin-bottom: 70px;
+    text-align: center;    
+    padding-top: 105px;
+    padding-bottom: 120px;
 }
 
 .advantages {
     display: flex;
     justify-content: space-between;
+    padding-top: 70px;
 }
 
 .advantage {
@@ -125,7 +123,6 @@ p {
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    margin-bottom: 120px;
 }
 
 /* section tickets */
@@ -153,7 +150,7 @@ p {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    padding: 15px;
+    padding: 15px 24px;
     margin-bottom: 15px;
     border: 1px solid #bbbbbb;
     border-radius: 3px;
@@ -170,7 +167,10 @@ p {
 .footer {
     font-family: 'Open Sans', sans-serif;
     background: #164d7a;
-    padding: 55px;
+}
+
+.footer .container {    
+    padding: 55px 0;
     text-align: center;    
 }
 
