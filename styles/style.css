@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #201b2d;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,12 +45,13 @@ p {
     background-color: #faab00;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 /* header */
 .header{
     background: linear-gradient(135deg, rgba(78,191,254,1) 35%, rgba(55,143,217,1) 100%);
-}
-
-.header .container {
     padding-top: 62px;
     padding-bottom: 70px;
 }
@@ -58,7 +60,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-right: -60px;
     color: #fff;
 }
 
@@ -84,12 +85,19 @@ p {
     margin-top: 40px;
 }
 
+.journey {
+    margin-right: -60px;
+}
+
 /* section futute */
+
+.future {
+    padding-top: 105px;
+    padding-bottom: 120px;
+}
 
 .future .container {
     text-align: center;    
-    padding-top: 105px;
-    padding-bottom: 120px;
 }
 
 .advantages {
@@ -124,12 +132,12 @@ p {
 /* section tickets */
 
 .tickets {
-    background: #ecf3f8;
+    background: #ecf3f8;    
+    padding: 100px 0;
 }
 
 .tickets .container {
     text-align: center;
-    padding: 100px 0;
 }
 
 .form {
@@ -163,10 +171,10 @@ p {
 .footer {
     font-family: 'Open Sans', sans-serif;
     background: #164d7a;
+    padding: 55px 0;
 }
 
-.footer .container {    
-    padding: 55px 0;
+.footer .container {
     text-align: center;    
 }
 
@@ -196,12 +204,15 @@ p {
         width: 720px;
     }
 
-    .header .container{
+    .header{
         padding-top: 50px;
     }
 
     .wrapper {
         flex-direction: column-reverse;
+    }
+
+    .journey {
         margin: 0;
     }
 
@@ -223,7 +234,7 @@ p {
         width: 540px;
     }
 
-    .header .container {
+    .header{
         padding-top: 20px;
     }
 
@@ -231,9 +242,8 @@ p {
         width: 100%;
     }
 
-    .future .container {
-        padding-top: 60px;
-        padding-bottom: 80px;
+    .future, .tickets{
+        padding: 60px 0;
     }
 
     .advantages {
